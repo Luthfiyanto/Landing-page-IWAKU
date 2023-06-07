@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Montserrat&display=swap');
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    color: #395b64;
+
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+/* Header */
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    padding: 40px;
+    background-image: url(image/bg\ header.jpg);
+    background-size: 100%;
+    background-position: center;
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    text-shadow: 10px 14px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigasi */
+
+nav {
+    background-color: #395b64;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav img {
+    width: 65px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-size: 0.9em;
+}
+
+/* Beranda */
+
+#beranda {
+    background-color: #E7F6F2;
+    border-radius: 10px;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+.card img {
+    height: 300px;
+}
+
+.card section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    flex-basis: 60%;
+    padding: 40px;
+    margin: 40px;
+    font-size: 15px;
+}
+
+.card section h3, .card section p {
+    text-align: justify;
+    align-items: center;
+}
+
+/* Makanan label */
+
+#makanan h3 {
+    margin-left: 25px;
+}
+
+.food {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.bakul {
+    display: flex;
+    position: relative;
+}
+
+.scrolllabel {
+    max-height: 400px;
+    border-top: 1px solid #395b64;
+    display: flex;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+
+}
+
+.scrolllabel::-webkit-scrollbar {
+    width: 0;
+}
+
+.icon {
+    background-color: white;
+    border: 1px solid #395b64;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 110px;
+    padding: 5px;
+}
+
+.icon img {
+    height: 30px;
+    filter: invert(31%) sepia(16%) saturate(851%) hue-rotate(146deg) brightness(99%) contrast(93%);
+}
+
+.icon:hover {
+    color: #395b64;
+}
+
+.label {
+    min-width: 300px;
+    border-radius: 10px;
+    background-color: #395b64;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Keunggulan */
+
+.keunggulan {
+    display: flex;
+    text-align: center;
+    background-color: #E7F6F2;
+    border-radius: 10px;
+    padding-left: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.keunggulan h3{
+    flex-grow: 2;
+    color: white;
+    margin-right: 5%;
+    margin-left: 0;
+    padding: 25px;
+
+    background-color: #395b64;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.veriflabel {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-size: 15px;
+    margin: 10px;
+    width: 50px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.veriflabel img {
+    height: auto;
+    filter: invert(31%) sepia(16%) saturate(851%) hue-rotate(146deg) brightness(99%) contrast(93%);
+}
+
+/* Pesan */
+
+.quote {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #395b64;
+    border-radius: 10px;
+    margin: 25px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tombol {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 400;
+}
+.pesan {
+    background-color: #395b64;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 1em;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.pesan:hover {
+    background-color: #E7F6F2;
+    color: #395b64;
+}
+
+/* Info */
+
+aside {
+    background-color: #2c3333;
+    color: white;
+    width: 23%;
+    float: right;
+    
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.kontak {
+    font-size: 12px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.no {
+    text-decoration: none;
+    color: white;
+}
+
+.no:hover {
+    color: steelblue;
+}
+
+.identitas img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.creator {
+    font-size: 12px;
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+.email {
+    text-decoration: none;
+    color: #2c3333;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.logoend {
+    height: 100px;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #2c3333;
+    text-align: center;
+}
+/* Responsive */
+
+@media screen and (max-width: 1000px) {
+    .card section {
+        font-size: 10px;
+    }
+
+    .quote {
+        font-size: 18px;
+    }
+
+    .veriflabel {
+        font-size: 12px;
+    }
+
+    .pesan {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card img {
+        height: auto;
+        margin-left: 120px;
+        margin-right: 120px;
+        margin-bottom: 0;
+    }
+    .card section {
+        margin-top: 0;
+        font-size: 15px;
+    }
+
+    .veriflabel {
+        font-size: 12px;
+    }
+
+    .quote {
+        font-size: 18px;
+    }
+
+    .tombol {
+        font-size: 16px;
+    }
+
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    aside {
+        border-radius: 0px;
+        margin-top: 50px;
+    }
+
+    .kontak {
+        height: 100px;
+    }
+
+    .kontak p {
+        display: inline;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .identitas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .identitas img {
+        height: 180px;
+        width: auto;
+        padding-right: 30px;
+    }
+
+    .identitas div {
+        flex-direction: column;
+    }
+
+    .identitas p{
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .jumbotron {
+        font-size: 20px;
+    }
+    nav a {
+        font-size: 0.7em;
+    }
+
+    .keunggulan {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .keunggulan h3 {
+        width: auto;
+        margin-right: 0%;
+        border-radius: 10px 10px 0 0;
+        margin-top: 0;
+
+    }
+    .veriflabel {
+        flex-direction: row;
+        width: 95%;
+        font-size: 16px;
+    }
+
+    .veriflabel p {
+        margin-left: 20px;
+    }
+
+    .quote {
+        font-size: 12px;
+    }
+
+    .tombol {
+        font-size: 12px;
+    }
+
+}
