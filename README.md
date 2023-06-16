@@ -1,2 +1,2 @@
 # Landing-page-IWAKU
-Merupakan projek frontend web pertama yang saya buat sebagai latihan saya dalam mempelajari dasar pembuatan web menggunakan HTML, CSS, dan Javascript sederhana.
+This is the first web frontend project that I made as my training in learning the basics of creating web using HTML, CSS, and simple Javascript.
